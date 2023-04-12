@@ -43,8 +43,8 @@
                 <p>
                   <a
                     class="project__author"
-                    href="{% url 'project' project.id %}"
-                    >By Dennis Ivanov</a
+                    href="/profile/{{ project.owner.id }}"
+                    >{{ project.owner }}</a
                   >
                 </p>
                 <p class="project--rating">

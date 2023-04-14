@@ -68,7 +68,7 @@ class Review(models.Model):
                           primary_key=True, editable=False)
 
     class Meta:
-        unique_together = [['owner', 'project']]
+        unique_together = [['owner', 'project']]    # will ensure that there is only one review per user
 
     def __str__(self):
         return self.value
